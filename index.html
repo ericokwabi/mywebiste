@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Website</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <img id="curio-img" src="img/curio.png" alt="curio">
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="#rooster">Rooster</a>
+                    <a href="#blokken">Blokken</a>
+                    <a href="#docenten">Docenten</a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="text">
+            <h1>OVER ONS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam voluptatum, voluptates
+                laboriosam accusantium
+                quis quos quibusdam rerum, quae ex esse beatae iure, nobis labore architecto perspiciatis quam itaque
+                necessitatibus.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur molestiae cupiditate enim, quae
+                numquam eligendi
+                sequi ducimus mollitia! Quisquam veritatis nemo repellendus sapiente nihil libero porro atque et tempora
+                nesciunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam voluptatum, voluptates
+                laboriosam accusantium
+                quis quos quibusdam rerum, quae ex esse beatae iure, nobis labore architecto perspiciatis quam itaque
+                necessitatibus.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur molestiae cupiditate enim, quae
+                numquam eligendi
+                sequi ducimus mollitia! Quisquam veritatis nemo repellendus sapiente nihil libero porro atque et tempora
+                nesciunt!</p>
+        </section>
+    </div>
+    <section id="rooster-blokken">
+        <div class="img">
+            <img id="image" src="img/rooster.png" alt="rooster">
+            <img id="image" src="img/blokken.png" alt="">
+        </div>
+
+        <p>Dit is een voorbeeld van hoe jouw rooster te komen zou zien. </p>
+        <p>Dit zijn de blokken van deze opleiding</p>
+
+    </section>
+
+    <section id="docenten">
+        <p>Hallo</p>
+    </section>
+</body>
+
+</html>
+
+<script>
+    // JavaScript to enable smooth scrolling for specific section links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default anchor click behavior
+
+            const target = document.querySelector(this.getAttribute('href')); // Get the target section
+
+            // Smoothly scroll to the target section
+            target.scrollIntoView({
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+    });
+</script>
